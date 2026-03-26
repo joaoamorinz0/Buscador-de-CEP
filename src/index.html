@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de CEP's</title>
+</head>
+<body>
+    
+    <div class="container">
+        <!--Seção de Busca do resultado-->
+        <h1 class="titulo"> buscador de CEP</h1>
+        <h2 class="subtitulo">Digite abaixo o CEP que deseja consultar.</h2>
+        <form id="formBtn">
+            <input id="cepText" type="text" maxlength="8" placeholder="Digite o CEP...">
+            <button id="SubmitBtn" type="submit">Encontrar</button>
+        </form>
+        <p id="erro"></p>
+        <!--Seção do resultado-->
+        <div>
+            <span class="label">CEP: </span><span id="cep" class="result"></span>
+        </div>
+
+        <div>
+            <span class="label">Rua: </span><span id="logradouro" class="result"></span>
+        </div>
+
+        <div>
+            <span class="label">Bairro: </span><span id="bairro" class="result"></span>
+        </div>
+
+        <div>
+            <span class="label">Localidade: </span><span id="localidade" class="result"></span>
+        </div>
+
+        <div>
+            <span class="label">Estado: </span><span id="uf" class="result"></span>
+        </div>
+    </div>
+
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
