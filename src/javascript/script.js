@@ -8,6 +8,7 @@ const form = document.getElementById("formBtn")
 async function buscarCep(event) {
 
     event.preventDefault();
+    input.value = input.value.replace(/\D/g, '');
     if (input.value.length < 8) {
     document.getElementById("erro").innerText = "O CEP precisa ter 8 dígitos."
     return;
