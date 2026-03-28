@@ -6,3 +6,9 @@
     --texto-sec: #78716C;
     --error:   #DC2626;
 }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
