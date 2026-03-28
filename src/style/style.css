@@ -4,8 +4,8 @@
     --bg: #FAF9F6;
     --container: #FFFFFF;
     --btn: #D97706;
-    --texto-principal:#292524;
-    --texto-sec: #78716C;
+    --texto-principal:#1b1919;
+    --texto-sec: #302e2d;
     --error:   #DC2626;
 }
 
@@ -24,3 +24,75 @@ body {
     justify-content: center;
 }
 
+.container {
+    background-color: var(--container);
+    padding: 35px;
+    border-radius: 2rem;
+    border: solid var(--texto-principal) 1px;
+    max-width: 420px;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 24px;
+    color: var(--texto-principal);
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.container h2 {
+    color: var(--texto-sec);
+    font-size: 14px;
+}
+
+#cepText {
+    padding: 5px;
+    max-width: 150px;
+    margin: 10px;
+    border-radius: 1rem;
+    border: solid var(--texto-sec) 1px;
+    transition: border 0.3s ease;
+}
+
+#cepText:hover {
+    border: solid var(--texto-principal) 1px;
+}
+
+#SubmitBtn {
+    font-size: 14px;
+    font-weight: 800;
+    margin: 10px;
+    color: var(--texto-sec);
+    background-color: var(--btn);
+    border: none;
+    padding: 5px;
+    border-radius: 1rem;
+    max-width: 150px;
+    transition: all 0.3s ease;
+}
+
+#SubmitBtn:hover {
+    color: var(--texto-principal);
+    background-color: #b45e05;
+}
+#erro {
+    color: var(--error);
+}
+
+#resultados {
+    display: none;
+    margin-top: 20px;
+    border-radius: 1rem;
+    padding: 10px;
+    background-color: var(--bg);
+    border: solid var(--texto-sec) 1px;
+    transition: all 0.3s ease;
+}
+
+.label {
+    font-weight: 600;
+}
+
+.labels {
+    margin-bottom: 10px;
+}

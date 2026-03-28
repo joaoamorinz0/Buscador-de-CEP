@@ -11,6 +11,9 @@ async function buscarCep(event) {
     input.value = input.value.replace(/\D/g, '');
     if (input.value.length < 8) {
     document.getElementById("erro").innerText = "O CEP precisa ter 8 dígitos."
+    setTimeout(() => {
+    document.getElementById("erro").innerText = '';
+}, 3000);
     return;
 }
 else {
@@ -20,7 +23,11 @@ else {
     const resposta = await fetch(url);
     const dados = await resposta.json();
     if (dados.erro) {
+    document.getElementById("resultados").style.display = 'none';
     document.getElementById("erro").innerText = "Esse CEP não existe!"
+    setTimeout(() => {
+    document.getElementById("erro").innerText = '';
+}, 3000);
     document.getElementById("cep").innerText = '';
     document.getElementById("logradouro").innerText = '';
     document.getElementById("bairro").innerText = '';
@@ -28,6 +35,7 @@ else {
     document.getElementById("uf").innerText = '';
     }
     else {
+    document.getElementById("resultados").style.display = 'block';   
     document.getElementById("cep").innerText = dados.cep;
     document.getElementById("logradouro").innerText = dados.logradouro;
     document.getElementById("bairro").innerText =dados.bairro;

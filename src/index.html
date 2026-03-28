@@ -10,7 +10,7 @@
     
     <div class="container">
         <!--Seção de Busca do resultado-->
-        <h1 class="titulo"> buscador de CEP</h1>
+        <h1 class="titulo"> Buscador de CEP</h1>
         <h2 class="subtitulo">Digite abaixo o CEP que deseja consultar.</h2>
         <form id="formBtn">
             <input id="cepText" type="text" maxlength="8" placeholder="Digite o CEP...">
@@ -18,24 +18,24 @@
         </form>
         <p id="erro"></p>
         <!--Seção do resultado-->
-        <div class="resultados">
-        <div>
+        <div id="resultados">
+        <div class="labels">
             <span class="label">CEP: </span><span id="cep" class="result"></span>
         </div>
 
-        <div>
+        <div class="labels">
             <span class="label">Rua: </span><span id="logradouro" class="result"></span>
         </div>
 
-        <div>
+        <div class="labels">
             <span class="label">Bairro: </span><span id="bairro" class="result"></span>
         </div>
 
-        <div>
+        <div class="labels">
             <span class="label">Localidade: </span><span id="localidade" class="result"></span>
         </div>
 
-        <div>
+        <div class="labels">
             <span class="label">Estado: </span><span id="uf" class="result"></span>
         </div>
         </div>
