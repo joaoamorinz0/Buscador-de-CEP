@@ -36,15 +36,15 @@ Este projeto foi desenvolvido para praticar:
 
 ## 💡 Próximas melhorias
 
-- Estilização completa com CSS
 - Tema escuro
 - Máscara de CEP no input (00000-000)
 - Histórico de buscas com localStorage
 
 ## 🔗 Deploy
 
-Em Breve!
+https://joaoamorinz0.github.io/Buscador-de-CEP/
 
 ## 📷 Preview
 
-<!-- Adicione um print do projeto aqui depois do CSS -->
+<img width="704" height="473" alt="{964A3ED7-55DB-4524-BB4B-C609D450324C}" src="https://github.com/user-attachments/assets/5085e2e7-f333-47d4-ab90-31fdb31bf1fb" />
+
